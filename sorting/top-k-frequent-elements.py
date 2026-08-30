@@ -13,9 +13,9 @@ class Solution:
         for i in range(n,-1,-1):
             if buckets[i]!=0:
                 ret.extend(buckets[i])
-            if len(ret)==k:
+            if len(ret)>=k:
                 break
-        return ret
+        return ret[:k]
 
             
 
