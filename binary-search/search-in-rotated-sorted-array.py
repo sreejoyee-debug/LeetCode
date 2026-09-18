@@ -5,7 +5,7 @@ class Solution:
         ans=nums[0]
         while(low <= high):
             mid=(low+high)//2
-            if (nums[low] <= nums[high]):
+            if (low<= high):
                 if nums[low] == target:
                     return low
                 if nums[high] == target:
