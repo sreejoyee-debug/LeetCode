@@ -8,8 +8,7 @@ class Solution:
             if (nums[low] <= nums[high]):
                 if nums[low] == target:
                     return low
-                
-                break
+            break
             if (nums[low] <= nums[mid]):
                 if nums[low] == target:
                     return low
@@ -21,6 +20,6 @@ class Solution:
                     break
                 high=mid - 1
         return -1
-        
+
        
         
