@@ -8,7 +8,6 @@ class Solution:
             if (nums[low] <= nums[high]):
                 if nums[low] == target:
                     return low
-            break
             if (nums[low] <= nums[mid]):
                 if nums[low] == target:
                     return low
