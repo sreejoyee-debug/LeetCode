@@ -5,13 +5,12 @@ class Solution:
         ans=nums[0]
         while(low <= high):
             mid=(low+high)//2
-            if (low<= high):
-                if nums[low] == target:
-                    return low
-                if nums[high] == target:
-                    return high
-                if nums[mid] == target:
-                    return mid
+            if nums[low] == target:
+                return low
+            if nums[high] == target:
+                return high
+            if nums[mid] == target:
+                return mid
             if (nums[low] <= nums[mid]):
                 if nums[low] == target:
                     return low
